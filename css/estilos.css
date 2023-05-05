@@ -1,251 +1,163 @@
+@charset "UTF-8";
+/*import utilizados*/ /*aplicado en scss de body, en scss main linea 70 y scss de footer */
+/*se utiliza mapa en scss contacto*/
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation:wght@500&family=Fasthand&family=Lora:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation:wght@500&family=Fasthand&family=Lora:wght@600&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*el mixin esta aplicado en el scss main linea 76 y scss contacto*/
+body {
+  font-family: "Delicious Handrawn", cursive;
 }
-body{
-    font-family: 'Delicious Handrawn', cursive;
-    }
-.header{
-    height: 100vh;
-    background-image: url("../assets/img/FONDO\ INDEX.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
 
+.header {
+  height: 100vh;
+  background-image: url("../assets/img/FONDO INDEX.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.imagenPrincipal{
-    width: 100%;
-}
-.contenedorLogo{
-    width:70%;
-    display: inline-block;
-}
-.logo{
-    width: 40%;
-    height: 30%;  
-    
-}
-.navegacion{
-    display: inline-block;
-    text-align: right;
-    position: absolute ;
-    top: 5%;
-    
-}.navbar-light .navbar-nav .nav-link{
-    color:bisque;
-    font-size: 2rem;
-}
-.nav-item{
-    color: bisque;
-    font-size: large;
-}
-.listaItem{
-    list-style: none;
-    display: inline-block;
-        
-}
-/*anclas de la navegacion*/
-.linkNav{
-    padding: 10px;
-    text-decoration: none;
-    font-size: 2rem;  
-    color: bisque;  
-}
-.footerLogo{
-    height: 15vh;
-    margin-top: 0% auto;
-    margin-left: 44%;
-    align-items: center;
-    }
-@media (max-width:768px) {
-    .footerLogo{
-        margin-left: 35%;
-    }
-}
-.tituloHeader{
-    width: 55%;
-    height: 10vh;
-    margin:0% auto; /*el primer valor indica para el top y para bottom al mismo tiempo, y el segundo valor indica el left y right*/
-    margin-top: 500px;
-    font-size: 1.15rem;
-    color: bisque;
-    font-family: 'Lora', serif;
-    text-align: center;
-    backdrop-filter: blur(12px);
-    padding-top: 30px;
-}
-.main{
-    background-color: bisque ;
-    padding-top: 40px;
-}
-.maincontacto{
-    background-color: bisque ;
 
+.logo {
+  width: 40%;
+  height: 30%;
 }
-.maincepas{
-    background-color: bisque ;
 
+.navbar-light .navbar-nav .nav-link {
+  color: bisque;
+  font-size: 2rem;
 }
-.footer{
-    background-color: rgb(194,60,92) ;
-}
-.sublogo{
-    margin-top: 0% auto;
-    margin-right: 3%;
-    text-align: center;
-    font-size: 2rem;
-}
-.redes{
-    margin-top: 0% auto;
-    margin-right: 3%;
-    text-align: center;
-        
-}
-.izquierdaviñedosindex{
-    background-image: url(../assets/img/viñedos\ main\ 1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-}
-.izquierdavisitanosindex{
-    background-image: url(../assets/img/botella\ y\ 2\ copas\ red.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-}
-.izquierda-experiencia-ubicacion{
-    background-image: url(../assets/img/experiencia\ gastronomica.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-}
-.izquierda-cata-ubicacion{
-    background-image: url(../assets/img/cata_vinos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-}
-.izquierda-contacto-ubicacion{
-    background-image: url(../assets/img/contcto\ formulario.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 50vh;   
-   
-}
-.izquierda-comollegar-ubicacion{
-    background-image: url(../assets/img/como\ llegar\ unicacion.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-}
-.izquierda-malbec-cepas{
-    background-image: url(../assets/img/malbec.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-}
-.izquierda-cabernet-cepas{
-    background-image: url(../assets/img/cabernet\ sauvignon.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-}
-.izquierda-merlot-cepas{
-    background-image: url(../assets/img/merlot.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-}
-.izquierda-chardonnay-cepas{
-    background-image: url(../assets/img/chardonnay.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-}
-.derecha{
-    height: 50vh;
-    background-color: bisque;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.mainfoto1{
-    width: 90%;
-    margin-left: 40px;
-    display: inline-block;
-    position: absolute;
-    left: 1%;
-    
-}
-.mainfoto2{
-    width: 10%;
-    margin-left: 40px;
-    display: inline-block;
-    position: absolute;
-    top:190%;
-    right: 35%;
-    background-color: antiquewhite;
-      
-    
-}
-.card-text{
-    font-size: 5 rem
-}
-.textofoto1{
-    width: 50%;
-    text-align: center; 
-    display: block;
-    position: absolute ;
-    top: 125%;
-    left: 50%;
-    font-size: 1.5rem;
-}
-.textofoto2{
-    width: 47%;
-    text-align: center; 
-    display: block;
-    position: absolute ;
-    top: 210%;
-    left: 5%;
-    font-size: 1.5rem;
-}
-.headerContacto{
-    height: 100vh;
-    background-image: url("../assets/img/FONDO\ INDEX.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-}
-.mainindex{
-    background-color: bisque;
-}
-.viaweb{
-    background-color: bisque;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.navegador{
-    font-size: large;
-}
-.izquierda-sierra-contacto{
-    
 
+.nav-item {
+  color: bisque;
+  font-size: large;
 }
+
+/*extend utilizados en esta pagina*/
+.izquierdaviñedosindex, .izquierda-2025-historia, .izquierda-2019-historia, .izquierda-2010-historia, .izquierda-2008-historia, .izquierda-2006-historia, .izquierda-2005-historia, .izquierda-chardonnay-cepas, .izquierda-merlot-cepas, .izquierda-cabernet-cepas, .izquierda-malbec-cepas, .izquierda-comollegar-ubicacion, .izquierda-contacto-ubicacion, .izquierda-cata-ubicacion, .izquierda-experiencia-ubicacion, .izquierdavisitanosindex {
+  background-image: url(../assets/img/viñedos\ main\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.izquierdavisitanosindex {
+  background-image: url(../assets/img/botella\ y\ 2\ copas\ red.jpeg);
+}
+
+.izquierda-experiencia-ubicacion {
+  background-image: url(../assets/img/experiencia\ gastronomica.jpg);
+}
+
+.izquierda-cata-ubicacion {
+  background-image: url(../assets/img/cata_vinos.jpg);
+}
+
+.izquierda-contacto-ubicacion {
+  background-image: url(../assets/img/contcto\ formulario.png);
+}
+
+.izquierda-comollegar-ubicacion {
+  background-image: url(../assets/img/como\ llegar\ unicacion.jpg);
+}
+
+.izquierda-malbec-cepas {
+  background-image: url(../assets/img/malbec.jpg);
+}
+
+.izquierda-cabernet-cepas {
+  background-image: url(../assets/img/cabernet\ sauvignon.jpg);
+}
+
+.izquierda-merlot-cepas {
+  background-image: url(../assets/img/merlot.png);
+}
+
+.izquierda-chardonnay-cepas {
+  background-image: url(../assets/img/chardonnay.png);
+}
+
+.izquierda-2005-historia {
+  background-image: url(../assets/img/2005.jpg);
+}
+
+.izquierda-2006-historia {
+  background-image: url(../assets/img/2006.png);
+}
+
+.izquierda-2008-historia {
+  background-image: url(../assets/img/2008.png);
+}
+
+.izquierda-2010-historia {
+  background-image: url(../assets/img/2010.jpg);
+}
+
+.izquierda-2019-historia {
+  background-image: url(../assets/img/2019.jpg);
+}
+
+.izquierda-2025-historia {
+  background-image: url(../assets/img/2025.jpg);
+}
+
+.main {
+  background-color: bisque;
+}
+
+.derecha {
+  height: 50vh;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*anidacion */
+footer {
+  background-color: rgb(194, 60, 92);
+}
+footer .footerLogo {
+  height: 15vh;
+  margin-top: 0% auto;
+  margin-left: 44%;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  footer .footerLogo {
+    margin-left: 35%;
+  }
+}
+footer p {
+  margin-top: 0% auto;
+  margin-right: 3%;
+  text-align: center;
+  font-size: 2rem;
+}
+footer .redes {
+  margin-top: 0% auto;
+  margin-right: 3%;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+}
+
+.viaweb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  background-color: bisque;
+}
+
+/*# sourceMappingURL=estilos.css.map */

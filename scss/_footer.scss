@@ -1,0 +1,35 @@
+/*anidacion */
+footer {
+    background-color:$fondofooter;
+
+    .footerLogo {
+        height: 15vh;
+        margin-top: 0% auto;
+        margin-left: 44%;
+        align-items: center;
+    }
+
+    @media (max-width:768px) {
+        .footerLogo {
+            margin-left: 35%;
+        }
+    }
+
+    p {
+        margin-top: 0% auto;
+        margin-right: 3%;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .redes {
+        margin-top: 0% auto;
+        margin-right: 3%;
+        text-align: center;
+        
+    }
+
+    a{ 
+        text-decoration: none;
+    }
+}
