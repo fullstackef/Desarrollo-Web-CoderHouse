@@ -5,14 +5,16 @@ footer {
     .footerLogo {
         height: 15vh;
         margin-top: 0% auto;
-        margin-left: 44%;
+        /*margin-left: 44%;*/
         align-items: center;
+        display: flex;
+        justify-content: center;
     }
 
-    @media (max-width:768px) {
+    /*@media (max-width:768px) {
         .footerLogo {
             margin-left: 35%;
-        }
+        }*/
     }
 
     p {

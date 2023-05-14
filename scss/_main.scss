@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    height: 1500vh;
 }
 .izquierdavisitanosindex{
     background-image: url(../assets/img/botella\ y\ 2\ copas\ red.jpeg);
@@ -72,7 +72,7 @@
 }
 .derecha{
     
-    height: 50vh;
+    height: 1500vh;
     background-color: bisque;
     @include flexbox(flex,center,center,column);
 }
