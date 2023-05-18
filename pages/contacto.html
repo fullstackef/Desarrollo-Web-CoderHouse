@@ -134,13 +134,31 @@
                     ¿Te quedaron dudas por resolver?, podes contactarnos por la pagina en el siguiente formulario
                 </h3>
                 <form action="404.html" class="formulariocontacto">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correo" name="correo" required>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-                    <button type="submit">Enviar</button>
+                    <div class="row">
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" required>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" id="correo" name="correo" class="form-control" required>
+                        </div>
+                        </div>
+                        <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" class="form-control" required></textarea>
+                        </div>
+                        </div>
+                    </div>
+                        <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                        </div>
                 </form>
             </div>
         </section>
