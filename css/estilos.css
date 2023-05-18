@@ -1,6 +1,5 @@
 @charset "UTF-8";
-/*import utilizados*/ /*aplicado en scss de body, en scss main linea 70 y scss de footer */
-/*se utiliza mapa en scss contacto*/
+/*import utilizados*/
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation:wght@500&family=Fasthand&family=Lora:wght@600&display=swap");
 * {
   margin: 0;
@@ -8,9 +7,39 @@
   box-sizing: border-box;
 }
 
+/*aplicado en scss de body, en scss main linea 70 y scss de footer */
+/*se utiliza mapa en scss contacto*/
 /*el mixin esta aplicado en el scss main linea 76 y scss contacto*/
 body {
   font-family: "Delicious Handrawn", cursive;
+}
+
+.descripcionestexto {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.h1html {
+  font-size: 5rem;
+  text-align: center;
+  color: bisque;
+  margin-top: 20vh;
+}
+
+.titulotexto {
+  color: slateblue;
+  font-weight: bold;
+}
+
+.año {
+  font-size: 3rem;
+  color: rebeccapurple;
+}
+
+.descripcionestexto404 {
+  font-size: 2rem;
+  text-align: center;
+  color: slateblue;
 }
 
 .header {
@@ -38,12 +67,12 @@ body {
 }
 
 /*extend utilizados en esta pagina*/
-.izquierdaviñedosindex, .izquierda-2025-historia, .izquierda-2019-historia, .izquierda-2010-historia, .izquierda-2008-historia, .izquierda-2006-historia, .izquierda-2005-historia, .izquierda-chardonnay-cepas, .izquierda-merlot-cepas, .izquierda-cabernet-cepas, .izquierda-malbec-cepas, .izquierda-comollegar-ubicacion, .izquierda-contacto-ubicacion, .izquierda-cata-ubicacion, .izquierda-experiencia-ubicacion, .izquierdavisitanosindex {
+.izquierdaviñedosindex, .izquierda-uvatriste-404, .izquierda-2025-historia, .izquierda-2019-historia, .izquierda-2010-historia, .izquierda-2008-historia, .izquierda-2006-historia, .izquierda-2005-historia, .izquierda-chardonnay-cepas, .izquierda-merlot-cepas, .izquierda-cabernet-cepas, .izquierda-malbec-cepas, .izquierda-comollegar-ubicacion, .izquierda-contacto-ubicacion, .izquierda-contacto-contacto, .izquierda-cata-ubicacion, .izquierda-experiencia-ubicacion, .izquierdavisitanosindex {
   background-image: url(../assets/img/viñedos\ main\ 1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 55vh;
 }
 
 .izquierdavisitanosindex {
@@ -58,8 +87,12 @@ body {
   background-image: url(../assets/img/cata_vinos.jpg);
 }
 
-.izquierda-contacto-ubicacion {
+.izquierda-contacto-contacto {
   background-image: url(../assets/img/contcto\ formulario.png);
+}
+
+.izquierda-contacto-ubicacion {
+  background-image: url(../assets/img/contactoubicacion.jpg);
 }
 
 .izquierda-comollegar-ubicacion {
@@ -91,7 +124,7 @@ body {
 }
 
 .izquierda-2008-historia {
-  background-image: url(../assets/img/2008.png);
+  background-image: url(../assets/img/primerembotellado.jpg);
 }
 
 .izquierda-2010-historia {
@@ -106,12 +139,16 @@ body {
   background-image: url(../assets/img/2025.jpg);
 }
 
+.izquierda-uvatriste-404 {
+  background-image: url(../assets/img/uva\ triste.jpg);
+}
+
 .main {
   background-color: bisque;
 }
 
 .derecha {
-  height: 50vh;
+  height: auto;
   background-color: bisque;
   display: flex;
   justify-content: center;
@@ -119,34 +156,44 @@ body {
   flex-direction: column;
 }
 
+.main404 {
+  height: 85vh;
+}
+
 /*anidacion */
 footer {
   background-color: rgb(194, 60, 92);
+  /*@media (max-width:768px) {
+      .footerLogo {
+          margin-left: 35%;
+      }*/
 }
 footer .footerLogo {
   height: 15vh;
   margin-top: 0% auto;
-  margin-left: 44%;
   align-items: center;
-}
-@media (max-width: 768px) {
-  footer .footerLogo {
-    margin-left: 35%;
-  }
+  display: flex;
+  justify-content: center;
 }
 footer p {
   margin-top: 0% auto;
-  margin-right: 3%;
+  margin-right: 0%;
   text-align: center;
   font-size: 2rem;
 }
 footer .redes {
   margin-top: 0% auto;
-  margin-right: 3%;
+  margin-right: 0%;
   text-align: center;
 }
 footer a {
   text-decoration: none;
+}
+footer .colorinstagram {
+  color: #ff00c8;
+}
+footer .colortwitter {
+  color: #109df4;
 }
 
 .viaweb {
@@ -160,4 +207,10 @@ body {
   background-color: bisque;
 }
 
-/*# sourceMappingURL=estilos.css.map */
+.body404 {
+  background-image: url(../assets/img/uva\ triste2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}/*# sourceMappingURL=estilos.css.map */

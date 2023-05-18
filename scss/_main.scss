@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 1500vh;
+    height: 55vh;
 }
 .izquierdavisitanosindex{
     background-image: url(../assets/img/botella\ y\ 2\ copas\ red.jpeg);
@@ -18,10 +18,13 @@
     background-image: url(../assets/img/cata_vinos.jpg);
     @extend .izquierdaviñedosindex
 }
-.izquierda-contacto-ubicacion{
+.izquierda-contacto-contacto{
     background-image: url(../assets/img/contcto\ formulario.png);
-    @extend .izquierdaviñedosindex   
-   
+    @extend .izquierdaviñedosindex 
+}  
+.izquierda-contacto-ubicacion{
+    background-image: url(../assets/img/contactoubicacion.jpg);
+    @extend .izquierdaviñedosindex  
 }
 .izquierda-comollegar-ubicacion{
     background-image: url(../assets/img/como\ llegar\ unicacion.jpg);
@@ -52,7 +55,7 @@
         @extend .izquierdaviñedosindex
 }
 .izquierda-2008-historia{
-    background-image: url(../assets/img/2008.png);
+    background-image: url(../assets/img/primerembotellado.jpg);
     @extend .izquierdaviñedosindex
 }
 .izquierda-2010-historia{
@@ -67,12 +70,16 @@
     background-image: url(../assets/img/2025.jpg);
     @extend .izquierdaviñedosindex
 }
+.izquierda-uvatriste-404{
+    background-image: url(../assets/img/uva\ triste.jpg);
+    @extend .izquierdaviñedosindex
+}
 .main{
     background-color: $fondomain ;
 }
 .derecha{
-    
-    height: 1500vh;
+    height: auto;
     background-color: bisque;
     @include flexbox(flex,center,center,column);
+    
 }
